@@ -254,6 +254,9 @@ namespace X11
         public static extern Status XDrawString(IntPtr display, Window drawable, IntPtr gc, int x, int y, string str, int length);
 
         [DllImport("libX11.so.6")]
+        public static extern Status XFillRectangle(IntPtr display, Window drawable, IntPtr gc, int x, int y, uint width, uint height);
+
+        [DllImport("libX11.so.6")]
         public static extern Status XDrawImageString(IntPtr display, Window drawable, IntPtr gc, int x, int y, string str, int length);
 
         [DllImport("libX11.so.6")]
