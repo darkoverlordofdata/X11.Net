@@ -156,6 +156,9 @@ namespace X11
         /// <returns></returns>
         [DllImport("libX11.so.6")]
         public static extern IntPtr XCreateGC(IntPtr display, Window drawable, GCComponents valuemask, ref XGCValues values);
+        
+        [DllImport("libX11.so.6")]
+        public static extern IntPtr XCreateGC(IntPtr display, Window drawable, ulong valuemask, long values);
 
         /// <summary>
         /// The XCopyGC function copies the specified components from the source GC to the destination GC.  

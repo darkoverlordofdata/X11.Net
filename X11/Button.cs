@@ -9,14 +9,9 @@ namespace X11
         None=0,
     }
 
+
     public enum KeyCode: byte
     {
-    }
-
-    public enum KeySym : long
-    {
-        NoSymbol = 0,
-        XK_r = 0x0072,
     }
 
     public enum Button : uint
